@@ -1,1 +1,4 @@
-this is a script that prints the absolute path name of the current working directory.
+this is to display the contents list of your current directory.>README.md
+
+
+echo this is to display the contents list of your current directory.

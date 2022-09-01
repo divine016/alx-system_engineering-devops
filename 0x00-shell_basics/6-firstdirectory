@@ -1,2 +1,11 @@
 #!/bin/bash
-mkdir/tmp/my_first_directory
+mkdir /tmp/my_first_repository/ >>6-firstdirectory 
+
+
+
+
+clear
+
+
+
+echo mkdir /tmp/my_first_repository/

@@ -1,2 +1,1 @@
-this is a readme file
-this is for task 1
+this is for the task

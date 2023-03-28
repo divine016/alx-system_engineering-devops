@@ -2,4 +2,5 @@
 # Create an RSA key pair with school as the private key and betty as passphrase
 # Number of bits = 4096
 
+
 ssh-keygen -t rsa -f school -b 4096 -N betty

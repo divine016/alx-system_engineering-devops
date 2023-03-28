@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that  connect to my server using aprivate key with a user
+ssh -i ~/.ssh/school ubuntu@8.8.8.8

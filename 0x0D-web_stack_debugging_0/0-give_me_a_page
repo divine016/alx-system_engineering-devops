@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #fix error so that curling port 80 should return a page
+
 service apache2 start

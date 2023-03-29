@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#fix error so that curling port 80 should return a page
+# this file fixes the code in docker to give correct output
 
 service apache2 start

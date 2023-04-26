@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# this file fixes the code in docker to give correct output
-
-service apache2 start

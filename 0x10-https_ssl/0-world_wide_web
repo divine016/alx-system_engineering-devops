@@ -11,7 +11,7 @@ funcDig () {
 	sub_domain="$2"
 	INFO="$(dig "$sub_domain.$domain" | grep -A1 'ANSWER SECTION:' | awk 'NR==2')"
 	IP=$(echo "$INFO" | awk '{print $5}')
-	RECORD=$(echo "INFO" | awk '{print $4}')
+	RECORD=$(echo "$INFO" | awk '{print $4}')
 
 	echo -e "The subdomain $sub_domain is a $RECORD record and  points to $IP"
 }

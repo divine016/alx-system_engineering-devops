@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# configure my domain zone so www ==> lb-01
+# and adding orther subdomains to make things easy
+
+#parameters and variables
+subdomains=("www" "lb-01" "web-01" "web-02")
+domain="$1"
+sub_domain="$2"
+
+funcDig () {
+	sub_domain="$2"
+	INFO="$(dig "$sub_domain.$domain" | grep -A1 'ANSWER SECTION:' | awk 'NR==2')"
+	IP=$(echo "$INFO" | awk '{print $5}')
+	RECORD=$(echo "INFO" | awk '{print $4}')
+
+	echo -e "The subdomain $sub_domain is a A record and  points to $IP"
+}
+
+if [ $# -eq 1 ]; then
+	for subs in "${subdomains[@]}"; do
+		funcDig "$domain" "$subs"
+	done
+elif [ $# -eq 2 ]; then
+	funcDig "$domain" "$sub_domain"
+fi

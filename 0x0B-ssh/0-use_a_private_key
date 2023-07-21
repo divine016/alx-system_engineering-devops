@@ -1,0 +1,4 @@
+#!usr/bin/env bash
+#connecting to an online server using ssh
+
+ssh -i ~/.ssh/school ubuntu@54.224.48.25

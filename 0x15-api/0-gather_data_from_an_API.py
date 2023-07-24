@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-using this REST API, for a given employee ID, 
+using this REST API, for a given employee ID,
 returns information about his/her TODO list progress
 '''
 import re
@@ -28,4 +28,3 @@ if __name__ == '__main__':
             if len(completed_tasks) > 0:
                 for task in completed_tasks:
                     print('\t {}'.format(task.get('title')))
-
